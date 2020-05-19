@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Seletor de cores RGB</title>
+</head>
+<body>
+    <h1 class="tit">Seletor de cores RGB</h1>
+    <section id="main">
+        <div id="controlers">
+            <div>
+                <p>(R) <strong>Vermelho:</strong></p>
+                <input oninput="showValueRed()" onchange="showValueRed()" id="redSelector" type="range" min="0" max="255" />
+                <input class="valueStyle" type="text" id="valueRed" disabled/>
+            </div>
+            <div>
+                <p>(G) <strong>Green:</strong></p>
+                <input oninput="showValueGreen()"  onchange="showValueGreen()" id="greenSelector" type="range" min="0" max="255" />
+                <input class="valueStyle" type="text" id="valueGreen" disabled/>
+            </div>
+            <div>
+                <p>(B) <strong>Blue:</strong></p>
+                <input oninput="showValueBlue()"  onchange="showValueBlue()" id="blueSelector" type="range" min="0" max="255" />
+                <input class="valueStyle" type="text" id="valueBlue" disabled/>
+            </div>
+        </div>
+        <div id="colorResult"></div>
+        </section>
+        <footer><p class="signature">Created by <a href="http://kadumagalhaes.me" target="_blank">Kadu Magalhães</a> with <strong>HTML5</strong>, <strong>CSS3</strong> and <strong>JavaScript</strong>.</p></footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
