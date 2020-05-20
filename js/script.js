@@ -1,12 +1,9 @@
-window.addEventListener('load', start)
-
-
-function start() {
+window.addEventListener('load', function () {
     showColorResult()
     showValueRed()
     showValueGreen()
     showValueBlue()
-}
+})
 
 function showValueRed() {
     let redSelector = document.querySelector('#redSelector')
@@ -27,7 +24,11 @@ function showValueBlue() {
 }
 
 function showColorResult() {
-    document.getElementById("colorResult").style.backgroundColor = `rgb(${redSelector.value}, ${greenSelector.value}, ${blueSelector.value})`
+    document.getElementById("colorResult").style.backgroundColor = 
+    `rgb(${redSelector.value}, 
+        ${greenSelector.value}, 
+        ${blueSelector.value}
+    )`
 }
 
 
